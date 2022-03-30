@@ -3,7 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import styled from "styled-components";
 import { render } from '@testing-library/react';
-
+import produtoCard from './components/produtoCard';
+import Produto from './components/Produto';
 
 export default class App extends React.Component {
   state = {
@@ -29,9 +30,9 @@ onChangeBuscaPorNome = (event) => {
 
 render(){
   return(
-    <div>
-      <h1></h1>
-    </div>
+    <Produto
+    produtos={produto}
+    />
   )
 }
 }
