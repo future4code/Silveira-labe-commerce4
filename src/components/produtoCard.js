@@ -1,24 +1,32 @@
-import { normalize } from '@testing-library/jest-dom/dist/utils'
-import React, { Component } from 'react'
-import App from '../App'
+import styled from 'styled-components';
+import App from '../App';
+
+const Div = styled.div`
+  border: 1px solid black;
+  height: 100vh;
+  width: 46%;
+  margin: 0 30%;
+  display: grid;
+  grid-template: column;
+  grid-template-rows: 96.5fr 3.5fr;`
 
 const Button = styled.button`
 align-self: center;
 margin-top: 4px;
 `
 
-export default class produtoCard extends React.Component {
-  render() {
-      const produtos = this.props.produtos
-    return <container>
-        <img src={foto.produto}/>
-        <produtoCard>
-          <p>{nome.produto}</p>  
-          <p>R${preco.produto},00</p>
-          <Button onClick={this.prop}>Adicionar ao carrinho</Button>
-        </produtoCard>
-      <div>produtoCard</div>
-      </container>
+
+
+function ProdutoCard (props) {
+    //  
+        return <div>
+        
+         
+          <Button onClick={""}>Adicionar ao carrinho</Button>
+       
+         </div>
     
-  }
 }
+
+export default ProdutoCard
+
