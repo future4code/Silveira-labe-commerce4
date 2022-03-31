@@ -3,7 +3,6 @@ import styled from "styled-components"
 
 const Container = styled.div`
   display: flex;
-  align-items: center;
   justify-content:space-evenly;
 `
 
@@ -11,9 +10,9 @@ const FiltersContainer = styled.div`
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-    height: 500px; 
-    width: 300px; 
+    width: 15vw; 
     padding: 10px;
+    margin-bottom: 20px;
 `
 
 const InputContainer = styled.div`
@@ -52,7 +51,7 @@ export default class Filters extends React.Component {
             <input
               type="text"
               value={this.props.nameFilter}
-              onChange={this.props.onChangeMaxFilter}
+              onChange={this.props.onChangeNameFilter}
             />
           </InputContainer>
       </FiltersContainer>
