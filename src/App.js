@@ -1,29 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import styled from "styled-components";
-import { render } from '@testing-library/react';
+import Filters from './components/Filters';
+import './App.css'
+import styled from 'styled-components'
 
 
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+`
 export default class App extends React.Component {
+  
   state = {
-    homePage: [{
-    valorMínimo: "",
-    valorMáximo: "", 
-    BuscaPorNome: "",
-    ordenacao: "Crescente",
-    
-    }],
-    carrinho: [{}]
+    minFilter: "",
+    maxFilter: "",
+    nameFilter: ""
+  };
+
+  const = 
+
+  onChangeMinFilter = (event) => {
+      this.setState({minFilter: event.target.value})
+  };
+
+  onChangeMaxFilter = (event) => {
+      this.setState({maxFilter: event.target.value})
+  };
+
+  onChangeNameFilter = (event) => {
+      this.setState({nameFilter: event.target.value})
+  };
+
+  render(){
+    return(
+    <Container>
+      <Filters>
+        minFilter={this.state.minFilter}
+        maxFilter={this.state.maxFilter}
+        nameFilter={this.state.nameFilter}
+      </Filters>
+
+    </Container>
+    )
   }
 }
-render(){
-  return(
-    <div>
-      <input placeholder='' value={this.state.valorMínimo}/>
-      <input placeholder='' value={this.state.valorMáximo}/>
-    </div>
-  ),
-},
-
-
