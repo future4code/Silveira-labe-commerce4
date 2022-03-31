@@ -5,7 +5,6 @@ import Produtos from './components/Produtos';
 import Carrinho from './components/Carrinho';
 import Card from './components/Card';
 import joblist from './data/jobs.json';
-import './App.css';
 import styled from 'styled-components';
 
 const Container = styled.div `
