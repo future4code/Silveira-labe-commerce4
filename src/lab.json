@@ -1,0 +1,31 @@
+[{
+    "nome": "Marte",
+    "foto":"https://s1.static.brasilescola.uol.com.br/be/2021/11/planeta-marte.jpg",
+    "descricao": "7 dias",
+    "preco": "R$ 200.000"
+},
+{
+    "nome": "Júpiter",
+    "foto":"https://img.olhardigital.com.br/wp-content/uploads/2021/09/Ilustracao-de-Jupiter-695x500.jpg",
+    "descricao": "7 dias",
+    "preco": "R$ 250.000"
+},
+{
+    "nome": "Saturno", 
+    "foto":"https://static7.depositphotos.com/1288351/768/i/600/depositphotos_7689364-stock-photo-ringed-planet.jpg",
+    "descricao": "10",
+    "preco": "R$ 220.000"
+},
+{
+    "nome": "Vênus",
+    "foto":"https://www.istoedinheiro.com.br/wp-content/uploads/sites/17/2021/09/venus-418x235.jpg",
+    "descricao": "7 dias",
+    "preco": "280.000"
+},
+{
+    "nome": "Urano",
+    "foto":"https://img.olhardigital.com.br/wp-content/uploads/2021/10/planeta-urano-1000x450.jpg",
+    "descricao":"7 dias",
+    "preco": "R$ 180.000" 
+}
+]

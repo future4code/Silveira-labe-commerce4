@@ -1,10 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import styled from "styled-components";
-import { render } from '@testing-library/react';
-import produtoCard from './components/produtoCard';
+import ProdutoCard from './components/ProdutoCard';
 import Produto from './components/Produto';
+import lablist from './lab.json'
+
 
 export default class App extends React.Component {
   state = {
@@ -15,7 +14,8 @@ export default class App extends React.Component {
     ordenacao: "Crescente",
     
     }],
-    carrinho: [{}]
+    carrinho: [{}],
+    labs: lablist
   }
 
 onChangevalorMaximo = (event) =>{
@@ -28,12 +28,29 @@ onChangeBuscaPorNome = (event) => {
   this.setState({BuscaPorNome:event.target.value})
 }
 
+
+
 render(){
-  return(
-    <Produto
-    produtos={produto}
-    />
-  )
-}
+  
+    return(
+      <div>
+        <div>
+          <Produto></Produto>
+        </div>
+        <div>
+          <p></p>
+          <ProdutoCard foto={''} nome={'Universo'} preco={''} />
+
+          <ProdutoCard foto={''} nome={'Universo'} preco={''} />
+
+          <ProdutoCard foto={''} nome={'Universo'} preco={''} />
+
+
+        </div>
+      </div>
+      
+      
+    )
+  }
 }
 

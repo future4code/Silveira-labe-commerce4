@@ -1,31 +1,33 @@
-import { render } from '@testing-library/react';
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import './App.css';
-import App from '../App';
 
-export default class Produto extends React.Component {
-    render() {
-const filtroDaLista = this.getFilterDaLista()
-return <ContainerDoProduto>
-    <CabecalhoProduto>
-        <p>Quantidade de produtos: {filtroDaLista.length}</p>
-    <label>
-        Ordenação: 
-        <select value={this.state.sort}>
-            <option value={'Crescente'}>Crescente</option>
-            <option value={'Decrescente'}>Decrescente</option>
-        </select>
-    </label>
-   </CabecalhoProduto>
+const Div = styled.div`
+  display: grid;
+  grid-template-columns: 200px 200px;
+  padding: 16px;
+  gap: 30px 30px;
+  margin-top: 5px;
+  margin-right: 50px;
+  margin-left: 300px;
+`
+
+
+function Produto (){
+    return (
+        <Div>
+            <p>Quantidade de produtos:</p>
+            <label>
+                Ordenação:
+                <select>
+                    <option>Crescente</option>
+                    <option>Decrescente</option>
+                </select>
+            </label>
+        </Div>
+    )
+}
+export default Produto
+
+
     
-    <FiltroBotao>
-        {filtroDaLista.map(() =>{
-            return <produtoCard
-            produto={{produto}}
-        }
-
-    </FiltroBotao>
-    </ContainerDoProduto>
-    }
-}        
+   
