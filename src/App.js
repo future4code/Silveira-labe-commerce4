@@ -1,26 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Filters from './components/Filters';
+import './App.css'
+import styled from 'styled-components'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+`
+export default class App extends React.Component {
+  
+  state = {
+    minFilter: "",
+    maxFilter: "",
+    nameFilter: ""
+  };
+
+  const = 
+
+  onChangeMinFilter = (event) => {
+      this.setState({minFilter: event.target.value})
+  };
+
+  onChangeMaxFilter = (event) => {
+      this.setState({maxFilter: event.target.value})
+  };
+
+  onChangeNameFilter = (event) => {
+      this.setState({nameFilter: event.target.value})
+  };
+
+  render(){
+    return(
+    <Container>
+      <Filters>
+        minFilter={this.state.minFilter}
+        maxFilter={this.state.maxFilter}
+        nameFilter={this.state.nameFilter}
+      </Filters>
+
+    </Container>
+    )
+  }
 }
-
-export default App;
