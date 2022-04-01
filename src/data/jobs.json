@@ -1,0 +1,58 @@
+[
+    {
+        "id": "Viagem1",
+        "title": "Viagem 1",
+        "description": "Espaço",
+        "valor": 1
+        
+    },
+    {
+        "id": "Viagem2",
+        "title": "Viagem 2",
+        "description": "Marte",
+        "valor": 10
+        
+    },
+    {
+        "id": "Viagem3",
+        "title": "Viagem 3",
+        "description": "Saturno",
+        "valor": 100
+        
+    },
+    {
+        "id": "Viagem4",
+        "title": "Viagem 4",
+        "description": "Lua",
+        "valor": 1000
+        
+    },
+    {
+        "id": "Viagem5",
+        "title": "Viagem 5",
+        "description": "Terra",
+        "valor": 10000
+        
+    },
+    {
+        "id": "Viagem6",
+        "title": "Viagem 6",
+        "description": "Mercúrio",
+        "valor": 100000
+        
+    },
+    {
+        "id": "Viagem7",
+        "title": "Viagem 7",
+        "description": "Plutão",
+        "valor": 1000000
+        
+    },
+    {
+        "id": "Viagem8",
+        "title": "Viagem 8",
+        "description": "Vênus",
+        "valor": 10000000
+        
+    }
+]
