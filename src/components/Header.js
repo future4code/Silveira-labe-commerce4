@@ -3,9 +3,9 @@ import styled from 'styled-components'
 
 
 const Titulo = styled.div`
-    margin: 20px;
+    margin-bottom: 20px;
     border: 1px solid black;
-    width: 97vw;
+    width: 100vw;
     text-align: center;
 
 `

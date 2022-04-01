@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const CardContainer = styled.div`
-    background-color: lavender;
+const CardContainer = styled.div `
+    background-color: #A020F0;
     margin: 5px;
     padding: 0 15px;
     border-radius: 5px;
@@ -17,7 +17,10 @@ function Card(props) {
         <CardContainer>
             <h2 > {props.job.title} </h2>
             <CardContent>
-                {props.job.description}
+                Destino:{props.job.description}
+            </CardContent>
+            <CardContent>
+                Preço:{props.job.valor}
             </CardContent>
         </CardContainer>
     ) 

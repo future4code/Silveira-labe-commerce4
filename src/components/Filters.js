@@ -1,25 +1,29 @@
 import React from 'react'
-import styled from "styled-components"
+import styled from 'styled-components';
 
-const Container = styled.div`
-  display: flex;
-  justify-content:space-evenly;
-`
 
 const FiltersContainer = styled.div`
     display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    width: 15vw; 
-    padding: 10px;
     margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9400D3;
 `
 
 const InputContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 8px;
+  align-items: center;
+`
+
+const Input = styled.input`
+  margin: 20px;
+  background-color: #A020F0;
+  color: white;
+`
+
+const H2 = styled.h2 `
+  margin-left: 20px;
+  color: white;
 `
 
 
@@ -27,35 +31,30 @@ const InputContainer = styled.div`
 export default class Filters extends React.Component {
   render() {
     return (
-      <Container>
         <FiltersContainer>
-          <h3>Filtros</h3>
+          <H2> SkyUniverse</H2>
           <InputContainer>
-            Valor Mínimo
-            <input
+          <h3>Busque por:</h3>
+            <Input
+              type="text"
+              placeholder='Nome'
+              value={this.props.nameFilter}
+              onChange={this.props.onChangeNameFilter}
+            />
+            <Input
               type="number"
+              placeholder='Valor Mínimo'
               value={this.props.minFilter}
               onChange={this.props.onChangeMinFilter}
             />
-          </InputContainer>
-          <InputContainer>
-            Valor Máximo
-            <input
+            <Input
               type="number"
+              placeholder='Valor Máximo'
               value={this.props.maxFilter}
               onChange={this.props.onChangeMaxFilter}
             />
           </InputContainer>
-          <InputContainer>
-            Busca por Nome
-            <input
-              type="text"
-              value={this.props.nameFilter}
-              onChange={this.props.onChangeNameFilter}
-            />
-          </InputContainer>
       </FiltersContainer>
-      </Container>
     )
   }
 }

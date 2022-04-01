@@ -10,12 +10,19 @@ import styled from 'styled-components';
 const Container = styled.div `
   display: flex;
   flex-direction: column;
-  align-items: center;
+  
 `
 
 const Main = styled.div `
   display: flex;
   justify-content: space-evenly;
+`
+const HeaderProdutos = styled.div`
+  justify-content: center;
+`
+const CorpoProdutos = styled.div`
+  display: flex;
+  flex-direction: column;
 `
 
 
@@ -43,26 +50,35 @@ export default class App extends React.Component {
   render() {
     return(
     <Container>
-      <Header/>
-      <Main>
-         <Filters 
+      <Filters 
           minFilter= {this.state.minFilter}
           maxFilter={this.state.maxFilter}
           nameFilter={this.state.nameFilter}
           onChangeMinFilter={this.onChangeMinFilter}
           onChangeMaxFilter={this.onChangeMaxFilter}
           onChangeNameFilter={this.onChangeNameFilter}>
-        </Filters> 
-        <Produtos>
-          {this.state.jobs
-          .filter(job =>{
-            return job.title.toLowerCase().includes(this.state.nameFilter.toLowerCase()) || 
-                  job.description.toLowerCase().includes(this.state.nameFilter.toLowerCase())
-          })
-          .map(job => {
-            return <Card key={job.id} job={job} />
-          })} 
-        </Produtos>
+        </Filters>
+      <Main>
+        <CorpoProdutos>
+          <HeaderProdutos>
+          </HeaderProdutos>
+          <Produtos>
+            {this.state.jobs
+            .filter(job =>{
+              return job.title.toLowerCase().includes(this.state.nameFilter.toLowerCase()) || 
+                    job.description.toLowerCase().includes(this.state.nameFilter.toLowerCase())
+            })
+            .filter(job=>{
+              return this.state.minFilter === "" || job.valor >= this.state.minFilter
+            })
+            .filter(job=>{
+              return this.state.maxFilter === "" || job.valor <= this.state.maxFilter
+            })
+            .map(job => {
+              return <Card key={job.id} job={job} />
+            })} 
+          </Produtos>
+        </CorpoProdutos> 
         <Carrinho>
 
         </Carrinho>

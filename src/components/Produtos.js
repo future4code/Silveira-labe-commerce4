@@ -14,7 +14,7 @@ const Corpo = styled.div`
     
 `
 
-export default class produtos extends React.Component {
+export default class Produtos extends React.Component {
   render() {
     return (
       <Corpo>
