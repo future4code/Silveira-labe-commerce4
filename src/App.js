@@ -24,6 +24,10 @@ const CorpoProdutos = styled.div`
   display: flex;
   flex-direction: column;
 `
+import styled from "styled-components";
+import ProdutoCard from './components/ProdutoCard';
+import Produto from './components/Produto';
+import lablist from './lab.json'
 
 
 export default class App extends React.Component {
@@ -88,3 +92,8 @@ export default class App extends React.Component {
     )
   }
 }
+    
+
+
+
+
