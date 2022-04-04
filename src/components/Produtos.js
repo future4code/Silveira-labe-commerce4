@@ -3,23 +3,28 @@ import styled from 'styled-components'
 
 const Corpo = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px 16px; 
     justify-items: center;
     width: 60vw;
-    height: 100vh;
-    text-align: center;
-    padding: 10px;
+    padding:10px;
     margin-bottom: 20px;
     
+`
+const Div = styled.div`
+  justify-content: center;
+  align-items: center;
 `
 
 export default class Produtos extends React.Component {
   render() {
     return (
-      <Corpo>
+      <Div>
+        <Corpo>
          {this.props.children}
       </Corpo>
+      </Div>
     )
   }
 }

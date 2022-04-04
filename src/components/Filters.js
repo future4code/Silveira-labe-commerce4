@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
+import { Rocket } from '@styled-icons/ionicons-sharp/Rocket';
 
 
 const FiltersContainer = styled.div`
@@ -7,7 +8,7 @@ const FiltersContainer = styled.div`
     margin-bottom: 20px;
     justify-content: space-between;
     align-items: center;
-    background-color: #9400D3;
+    background-color: #f5f5f5;
 `
 
 const InputContainer = styled.div`
@@ -17,24 +18,37 @@ const InputContainer = styled.div`
 
 const Input = styled.input`
   margin: 20px;
-  background-color: #A020F0;
-  color: white;
+  background-color: #D8BFD8;
+  border-radius: 6px;
+  border: none;
+  height: 30px;
+  outline: 0;
 `
 
-const H2 = styled.h2 `
-  margin-left: 20px;
-  color: white;
+const H1 = styled.h1`
+  color: #9400D3;
 `
 
+const H3 = styled.h3`
+  color: #9400D3;
+`
+const Div = styled.div`
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+`
 
 
 export default class Filters extends React.Component {
   render() {
     return (
         <FiltersContainer>
-          <H2> SkyUniverse</H2>
+          <Div>
+            <Rocket size={30} color="#9400D3" />
+            <H1>SkyUniverse</H1>
+          </Div>
           <InputContainer>
-          <h3>Busque por:</h3>
+          <H3>Busque por:</H3>
             <Input
               type="text"
               placeholder='Nome'
