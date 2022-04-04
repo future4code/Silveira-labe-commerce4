@@ -10,7 +10,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-image: url('https://i.pinimg.com/originals/22/58/24/2258249e9b4084cda4fdc9c798818d19.jpg');
-  background-size: cover ;
+  background-size: cover;
 `
 
 const Main = styled.div`
@@ -122,6 +122,7 @@ export default class App extends React.Component {
             }
           </Produtos>
         </CorpoProdutos> 
+        
       </Main>
     </Container>
     )

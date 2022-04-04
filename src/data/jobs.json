@@ -77,5 +77,14 @@
         "description":"O Gigante Planeta de Gelo Urano exibe 13 anéis e possui 27 luas ",
         "quantidade": 0,
         "valor": 180.000
+    },
+    {
+        "id": "9",
+        "title": "Júpiter",
+        "foto":"https://img.olhardigital.com.br/wp-content/uploads/2021/09/Ilustracao-de-Jupiter-695x500.jpg",
+        "duracao": 10,
+        "description": "O Incrível Planeta Gigante o maior de todos!",
+        "quantidade": 0, 
+        "valor": 400.000
     }
 ]
