@@ -6,14 +6,14 @@ import Card from './components/Card';
 import joblist from './data/jobs.json';
 import styled from 'styled-components';
 
-const Container = styled.div `
+const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-image: url('https://i.pinimg.com/originals/22/58/24/2258249e9b4084cda4fdc9c798818d19.jpg');
   background-size: cover ;
 `
 
-const Main = styled.div `
+const Main = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,8 +91,7 @@ export default class App extends React.Component {
             .length}
           sortingParameter={this.state.sortingParameter}
           updateSortingParameter= {this.updateSortingParameter}
-          >
-        </HeaderProdutos>
+          />
         <CorpoProdutos>
           <Produtos>
             {this.state.jobs
