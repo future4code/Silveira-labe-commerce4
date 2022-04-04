@@ -1,58 +1,81 @@
 [
     {
-        "id": "Viagem1",
-        "title": "Viagem 1",
-        "description": "Espaço",
-        "valor": 1
-        
+        "id": "1",
+        "title": "Marte",
+        "foto": "https://s1.static.brasilescola.uol.com.br/be/2021/11/planeta-marte.jpg",
+        "duracao": 7,
+        "description": "Venha conhecer os Mistérios do Planeta Vermelho",
+        "quantidade": 0,
+        "valor": 200.000
     },
+
     {
-        "id": "Viagem2",
-        "title": "Viagem 2",
-        "description": "Marte",
-        "valor": 10
-        
+        "id": "2",
+        "title": "Marte",
+        "foto":"https://s1.static.brasilescola.uol.com.br/be/2021/11/planeta-marte.jpg",
+        "duracao": 2,
+        "description": "Venha conhecer os Mistérios do Planeta Vermelho",
+        "quantidade": 0,
+        "valor": 100.000
     },
+
     {
-        "id": "Viagem3",
-        "title": "Viagem 3",
-        "description": "Saturno",
-        "valor": 100
-        
+        "id": "3",
+        "title": "Júpiter",
+        "foto":"https://img.olhardigital.com.br/wp-content/uploads/2021/09/Ilustracao-de-Jupiter-695x500.jpg",
+        "duracao": 7,
+        "description": "O Incrível Planeta Gigante o maior de todos!",
+        "quantidade": 0, 
+        "valor": 250.000
     },
+
     {
-        "id": "Viagem4",
-        "title": "Viagem 4",
-        "description": "Lua",
-        "valor": 1000
-        
+        "id": "4",
+        "title": "Saturno",
+        "foto":"https://static7.depositphotos.com/1288351/768/i/600/depositphotos_7689364-stock-photo-ringed-planet.jpg",
+        "duracao": 10,
+        "description": "O Extrordiário Planeta dos Anéis de Gelo! ",
+        "quantidade": 0,
+        "valor":  220.000
     },
+
     {
-        "id": "Viagem5",
-        "title": "Viagem 5",
-        "description": "Terra",
-        "valor": 10000
-        
+        "id": "5",
+        "title": "Saturno",
+        "foto":"https://static7.depositphotos.com/1288351/768/i/600/depositphotos_7689364-stock-photo-ringed-planet.jpg",
+        "duracao": 10,
+        "description": "O Extrordiário Planeta dos Anéis de Gelo!",
+        "quantidade": 0,
+        "valor": 150.000
     },
+
     {
-        "id": "Viagem6",
-        "title": "Viagem 6",
-        "description": "Mercúrio",
-        "valor": 100000
-        
+        "id": "6",
+        "title": "Vênus",
+        "foto":"https://www.istoedinheiro.com.br/wp-content/uploads/sites/17/2021/09/venus-418x235.jpg",
+        "duracao": 7,
+        "description": "Uma incrível jornada neste Planeta Quente!",
+        "quantidade": 0,
+        "valor": 280.000
     },
+
     {
-        "id": "Viagem7",
-        "title": "Viagem 7",
-        "description": "Plutão",
-        "valor": 1000000
-        
+        "id": "7",
+        "title": "Vênus",
+        "foto":"https://www.istoedinheiro.com.br/wp-content/uploads/sites/17/2021/09/venus-418x235.jpg",
+        "duracao": 2,
+        "description": "Uma incrível jornada neste Planeta Quente!",
+        "quantidade": 0,
+        "valor": 150.000
     },
-    {
-        "id": "Viagem8",
-        "title": "Viagem 8",
-        "description": "Vênus",
-        "valor": 10000000
-        
+
+    {  
+         "id": "8",
+        "title": "Urano",
+        "foto":"https://img.olhardigital.com.br/wp-content/uploads/2021/10/planeta-urano-1000x450.jpg",
+        "duracao": 10,
+        "description":"O Gigante Planeta de Gelo Urano exibe 13 anéis e possui 27 luas ",
+        "quantidade": 0,
+        "valor": 180.000
     }
 ]
